@@ -1,5 +1,5 @@
 @HtmlImport('main_app.html')
-library lab01_first_elements.lib.main_app;
+library pdcl_first_elements.lib.main_app;
 
 import 'dart:html';
 
@@ -14,10 +14,11 @@ import 'icon_toggle.dart';
 @PolymerRegister('main-app')
 class MainApp extends PolymerElement {
 
-  @property bool isFav = false;
+  @property
+  bool isFav = false;
 
   MainApp.created() : super.created();
 
-  @reflectable String message(bool fav) =>
-      fav ? "You really like me!" : "Do you like me?";
+  @reflectable
+  String message(bool fav) => fav ? "You really like me!" : "Do you like me?";
 }
