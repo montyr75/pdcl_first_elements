@@ -1,20 +1,20 @@
 <dom-module id="icon-toggle">
-  <style>
-    :host {
-      display: inline-block;
-    }
-
-    iron-icon {
-      fill: var(--icon-toggle-color, rgba(0, 0, 0, 0));
-      stroke: var(--icon-toggle-outline-color, black);
-    }
-
-    :host([pressed]) iron-icon {
-      fill: var(--icon-toggle-pressed-color, black);
-    }
-  </style>
-
   <template>
+    <style>
+      :host {
+        display: inline-block;
+      }
+
+      iron-icon {
+        fill: var(--icon-toggle-color, rgba(0, 0, 0, 0));
+        stroke: var(--icon-toggle-outline-color, black);
+      }
+
+      :host([pressed]) iron-icon {
+        fill: var(--icon-toggle-pressed-color, black);
+      }
+    </style>
+
     <iron-icon icon="[[toggleIcon]]"></iron-icon>
   </template>
 </dom-module>
